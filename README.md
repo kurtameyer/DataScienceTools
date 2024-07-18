@@ -42,6 +42,5 @@ https://facebook.github.io/prophet/
 - If Arima is chosen, the user will be presented with a PACF, ACF and first order difference. 
   1. At this point the user can make a best guess p,d,q estimate and enter a duration for forecasting can be entered in the input fields
   2. An additional seasonality option using the SARIMAX can be checked to account for any seasonal variations in the data.
-- For Prophet, the beauty of the model is that it is absolutely automated and no parameters need be set except the duration of forecast required. Although as mnentioned in [prophet](https://github.com/vivekvaradarajan1980/Comp4447/edit/main/README.md#spotlight-kurt-for-prophet-modeling) one can specify or account for specific holidays if there should be such a pattern in the data.
+- For Prophet, the beauty of the model is that it is absolutely automated and no parameters need be set except the duration of forecast required. 
 
-- 
