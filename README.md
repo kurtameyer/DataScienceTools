@@ -9,6 +9,19 @@
 - Flask for web api  
 - Docker for containerizing the application
 
+### Usage of the application
+
+![User input](images/fordstockinput.png)
+
+- First the API gives the user an interface to choose a ticker symbol and the duration of data to train the model on from current date
+- Then the application shows an initial plot of the time series data of the chosen ticker sybmol for the duration selected along with the ADFueller test for stationarity. A p-value less than 0.05 indicates that the data is stationary.
+- At this point, the user can pick a model for forecasting
+- If Arima is chosen, the user will be presented with a PACF, ACF and first order difference. 
+  1. At this point the user can make a best guess p,d,q estimate and enter a duration for forecasting can be entered in the input fields
+  2. An additional seasonality option using the SARIMAX can be checked to account for any seasonal variations in the data.
+- For Prophet, the beauty of the model is that it is absolutely automated and no parameters need be set except the duration of forecast required. 
+
+
 ## SARIMA/ARIMA 
 ARIMA is a model for time series forecasting. The name stands for auto regressive integrated moving average.  The program takes 3 parameters, p,d and q with default values of 1, 1, 1
 
@@ -32,15 +45,4 @@ You can visit the Facebook Open-Source description of the project on GitHub to i
 https://facebook.github.io/prophet/
 
 
-### Usage of the application
-
-![User input](images/fordstockinput.png)
-
-- First the API gives the user an interface to choose a ticker symbol and the duration of data to train the model on from current date
-- Then the application shows an initial plot of the time series data of the chosen ticker sybmol for the duration selected along with the ADFueller test for stationarity. A p-value less than 0.05 indicates that the data is stationary.
-- At this point, the user can pick a model for forecasting
-- If Arima is chosen, the user will be presented with a PACF, ACF and first order difference. 
-  1. At this point the user can make a best guess p,d,q estimate and enter a duration for forecasting can be entered in the input fields
-  2. An additional seasonality option using the SARIMAX can be checked to account for any seasonal variations in the data.
-- For Prophet, the beauty of the model is that it is absolutely automated and no parameters need be set except the duration of forecast required. 
 
