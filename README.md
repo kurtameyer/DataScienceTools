@@ -14,6 +14,7 @@
 ![User input](images/fordstockinput.png)
 
 - First the API gives the user an interface to choose a ticker symbol and the duration of data to train the model on from current date
+- It is usually best to choose several years of data if you plan on running one of the forecasting models.
 - Then the application shows an initial plot of the time series data of the chosen ticker sybmol for the duration selected along with the ADFueller test for stationarity. A p-value less than 0.05 indicates that the data is stationary.
 - At this point, the user can pick a model for forecasting
 - If Arima is chosen, the user will be presented with a PACF, ACF and first order difference. 
